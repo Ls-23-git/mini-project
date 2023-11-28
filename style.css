@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --yellow: #ffc554;
+  --deep-yellow: #ffc727;
+  --bg-yellow: #fffaf1;
+  --orange-text: rgb(255, 102, 0);
+  --gray: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--bg-yellow);
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.yellow {
+  color: var(--yellow);
+  color: orange;
+}
+
+.btn {
+  border: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+  background-color: var(--deep-yellow);
+  margin: 0 auto;
+  padding: 1.4rem 5rem;
+  border-radius: 1vh;
+}
+
+/* ---- home ----- */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-left {
+  height: 100%;
+  flex-basis: 70%;
+}
+
+.home-left .navbar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left h1 {
+  font-size: 3rem;
+  color: red;
+  margin-left: 1rem;
+}
+
+.nav-right ul {
+  display: flex;
+}
+
+.nav-right ul li {
+  color: red;
+  font-size: 2rem;
+}
+.nav-right ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 2.2rem;
+  margin-right: 3rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-right ul li:hover {
+  color: darkred;
+  transform: scale(1.1);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.home-left .text {
+  height: 80%;
+  font-size: 5rem;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-left .text h4 {
+  color: var(--orange-text);
+  margin-bottom: 1.5rem;
+}
+
+.home-left .text p span{
+  color: orangered;
+}
+
+.home-left .text p {
+  font-size: 2rem;
+}
+
+.home-left .text button{
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.home-right {
+  background-color: orange;
+  flex-basis: 30%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.home-right img {
+  width: 57rem;
+  height: 55rem;
+  position: absolute;
+  top: 15%;
+  right: 50%;
+}
+
+/* ---- about ----- */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content h3 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about .content p {
+  color: gray;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.eat-btn {
+  display: inline-block;
+}
+
+.eat-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+}
+
+/* ------- services -------- */
+.white {
+  color: white;
+}
+
+.services {
+  background-color: orange;
+  padding: 10rem 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services .services-top {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.services .services-top h2 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.black {
+  color: black;
+}
+
+.services .services-top p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+
+.services .services-grid .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.5s;
+  box-shadow: var(--box);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.services .services-grid .box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.692);
+  transform: translateY(-10px);
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.services .services-grid .box img {
+  height: 6rem;
+}
+
+.services .services-grid .box h4 {
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
+}
+
+.services .services-grid .box p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.services .services-grid .box a {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.services .services-grid .box a img {
+  height: 1rem;
+}
+
+/* ----- footer ----- */
+.footer {
+  padding: 12rem 9%;
+  background-color: black;
+  width: 100%;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left h1 {
+  font-size: 7rem;
+}
+
+.contact-left p {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.contact-left p i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: var(--deep-yellow);
+}
+
+.social-icons {
+  margin: 2vh 0;
+}
+
+.social-icons a {
+  margin-right: 1.5rem;
+  color: white;
+  font-size: 3rem;
+  transition: transform 0.5s;
+}
+
+.social-icons a i:hover {
+  color: var(--deep-yellow);
+  transform: scale(1.1);
+}
+
+.quick-links ul {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.quick-links ul li a {
+  color: var(--deep-yellow);
+  font-size: 1.5rem;
+  margin-right: 3rem;
+}
+
+.quick-links ul li a:hover {
+  color: var(--orange-text);
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+.contact-right form input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: var(--gray);
+  color: white;
+}
+
+.form-btn {
+  margin-top: 3rem;
+}
+
+.form-btn:hover {
+  background-color: orange;
+  box-shadow: 0 0 20px rgba(243, 240, 240, 0.2);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: white;
+  background-color: var(--gray);
+}
+
+/* -----media queries----- */
+
+@media screen and (max-width: 1200px) {
+  .contact-box {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+}
